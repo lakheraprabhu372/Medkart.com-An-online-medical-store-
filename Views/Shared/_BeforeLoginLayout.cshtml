@@ -1,0 +1,1008 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/beforelayout.css" rel="stylesheet" />
+
+    @*attaching all the bootstrap liabraries*@
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    @*attaching all the bootstrap liabraries*@
+</head>
+
+<body>
+    <div class="container-fluid pt-3 bg-dark text-center text-white">
+        <div class="row ">
+            <div class="col-sm-1">
+                <img id="logo" src="~/Images/logo.png" />
+            </div>
+            <div class="col-sm-2">
+                <b style="font-family: Tahoma; font-size: 32px; color: #ffffff;">Medkart.com</b>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3">
+                <input id="searchtxt" type="text" class="form-control" placeholder="Search Here" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-sm-1">
+                <input type="button" value="Search" class="btn btn-primary" />
+                </div>
+            <div class="col-sm-1">
+                
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Login" class="nav-link" style="color: #ffffff;">Login</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/UserRegistration" class="nav-link" style="color: #ffffff;">SignUp</a>
+            </div>
+            <div class="col-sm-1">
+                <a style="color: #ffffff;" href="google.com" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+                    </svg>&nbsp;Cart
+                </a>
+            </div>
+        </div>
+
+        <div class="row py-3">
+            <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Welcome :</label>
+                </div>
+                 <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Guest</label>
+                 </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Indexpage" class="nav-link link-primary" style="color: #ffffff;">Home</a>
+                </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/AboutUs" class="nav-link" style="color: #ffffff;">AboutUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/ContactUs" class="nav-link" style="color: #ffffff;">ContactUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Feedback" class="nav-link" style="color: #ffffff;">Feedback</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/FAQ" class="nav-link" style="color: #ffffff;">FAQ'S</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Afterlayout/Medicine" class="nav-link" style="color: #ffffff;">Medicines</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Beauty</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Lab Tests</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="~/Beforelayout/HealthCareblog" class="nav-link" style="color: #ffffff;">Health Care Blogs</a>
+            </div>
+            </div>
+        </div>
+  
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <div style="background-color: #dddddd; display: block;">
+        <table>
+            <tr>
+                <td style="font-size: 22px; font: bold; font-family: sans-serif; padding-left: 68px;">
+                    <img id="logo2" src="~/Images/logo.png" />&nbsp;Medkart.com
+                </td>
+                <td style="text-align: center; font-family: sans-serif; padding-left: 54px;">Medkart.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to happy customers – PAN India.</td>
+
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: #dddddd; display: block; padding-top: 10px;">
+        <div style="display: inline-block; margin-left: 388px">
+            <table>
+                <tr style="font-size: 19px;">
+                    <td><b><u>Importatnt Links</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Home</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">SignUp</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Care Blogs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">FAQ'S</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 114px; padding-bottom: 41px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Our Services</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Buy Medicines</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Lab Tests</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Beauty Care Products</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Blogs</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 142px; padding-bottom: 83px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Connect With Us</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">ContactUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">AboutUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Feedback</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/beforelayout.css" rel="stylesheet" />
+
+    @*attaching all the bootstrap liabraries*@
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    @*attaching all the bootstrap liabraries*@
+</head>
+
+<body>
+    <div class="container-fluid pt-3 bg-dark text-center text-white">
+        <div class="row ">
+            <div class="col-sm-1">
+                <img id="logo" src="~/Images/logo.png" />
+            </div>
+            <div class="col-sm-2">
+                <b style="font-family: Tahoma; font-size: 32px; color: #ffffff;">Medkart.com</b>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3">
+                <input id="searchtxt" type="text" class="form-control" placeholder="Search Here" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-sm-1">
+                <input type="button" value="Search" class="btn btn-primary" />
+                </div>
+            <div class="col-sm-1">
+                
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Login" class="nav-link" style="color: #ffffff;">Login</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/UserRegistration" class="nav-link" style="color: #ffffff;">SignUp</a>
+            </div>
+            <div class="col-sm-1">
+                <a style="color: #ffffff;" href="google.com" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+                    </svg>&nbsp;Cart
+                </a>
+            </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Welcome :</label>
+                </div>
+                 <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Guest</label>
+                 </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Indexpage" class="nav-link link-primary" style="color: #ffffff;">Home</a>
+                </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/AboutUs" class="nav-link" style="color: #ffffff;">AboutUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/ContactUs" class="nav-link" style="color: #ffffff;">ContactUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Feedback" class="nav-link" style="color: #ffffff;">Feedback</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/FAQ" class="nav-link" style="color: #ffffff;">FAQ'S</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Afterlayout/Medicine" class="nav-link" style="color: #ffffff;">Medicines</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Beauty</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Lab Tests</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="~/Beforelayout/HealthCareblog" class="nav-link" style="color: #ffffff;">Health Care Blogs</a>
+            </div>
+            </div>
+        </div>
+  
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <div style="background-color: #dddddd; display: block;">
+        <table>
+            <tr>
+                <td style="font-size: 22px; font: bold; font-family: sans-serif; padding-left: 68px;">
+                    <img id="logo2" src="~/Images/logo.png" />&nbsp;Medkart.com
+                </td>
+                <td style="text-align: center; font-family: sans-serif; padding-left: 54px;">Medkart.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to happy customers – PAN India.</td>
+
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: #dddddd; display: block; padding-top: 10px;">
+        <div style="display: inline-block; margin-left: 388px">
+            <table>
+                <tr style="font-size: 19px;">
+                    <td><b><u>Importatnt Links</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Home</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">SignUp</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Care Blogs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">FAQ'S</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 114px; padding-bottom: 41px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Our Services</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Buy Medicines</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Lab Tests</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Beauty Care Products</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Blogs</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 142px; padding-bottom: 83px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Connect With Us</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">ContactUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">AboutUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Feedback</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/beforelayout.css" rel="stylesheet" />
+
+    @*attaching all the bootstrap liabraries*@
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    @*attaching all the bootstrap liabraries*@
+</head>
+
+<body>
+    <div class="container-fluid pt-3 bg-dark text-center text-white">
+        <div class="row ">
+            <div class="col-sm-1">
+                <img id="logo" src="~/Images/logo.png" />
+            </div>
+            <div class="col-sm-2">
+                <b style="font-family: Tahoma; font-size: 32px; color: #ffffff;">Medkart.com</b>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3">
+                <input id="searchtxt" type="text" class="form-control" placeholder="Search Here" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-sm-1">
+                <input type="button" value="Search" class="btn btn-primary" />
+                </div>
+            <div class="col-sm-1">
+                
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Login" class="nav-link" style="color: #ffffff;">Login</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/UserRegistration" class="nav-link" style="color: #ffffff;">SignUp</a>
+            </div>
+            <div class="col-sm-1">
+                <a style="color: #ffffff;" href="google.com" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+                    </svg>&nbsp;Cart
+                </a>
+            </div>
+        </div>
+
+        <div class="row py-3">
+            <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Welcome :</label>
+                </div>
+                 <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Guest</label>
+                 </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Indexpage" class="nav-link link-primary" style="color: #ffffff;">Home</a>
+                </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/AboutUs" class="nav-link" style="color: #ffffff;">AboutUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/ContactUs" class="nav-link" style="color: #ffffff;">ContactUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Feedback" class="nav-link" style="color: #ffffff;">Feedback</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/FAQ" class="nav-link" style="color: #ffffff;">FAQ'S</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Afterlayout/Medicine" class="nav-link" style="color: #ffffff;">Medicines</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Beauty</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Lab Tests</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="~/Beforelayout/HealthCareblog" class="nav-link" style="color: #ffffff;">Health Care Blogs</a>
+            </div>
+            </div>
+        </div>
+  
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <div style="background-color: #dddddd; display: block;">
+        <table>
+            <tr>
+                <td style="font-size: 22px; font: bold; font-family: sans-serif; padding-left: 68px;">
+                    <img id="logo2" src="~/Images/logo.png" />&nbsp;Medkart.com
+                </td>
+                <td style="text-align: center; font-family: sans-serif; padding-left: 54px;">Medkart.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to happy customers – PAN India.</td>
+
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: #dddddd; display: block; padding-top: 10px;">
+        <div style="display: inline-block; margin-left: 388px">
+            <table>
+                <tr style="font-size: 19px;">
+                    <td><b><u>Importatnt Links</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Home</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">SignUp</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Care Blogs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">FAQ'S</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 114px; padding-bottom: 41px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Our Services</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Buy Medicines</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Lab Tests</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Beauty Care Products</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Blogs</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 142px; padding-bottom: 83px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Connect With Us</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">ContactUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">AboutUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Feedback</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/beforelayout.css" rel="stylesheet" />
+
+    @*attaching all the bootstrap liabraries*@
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    @*attaching all the bootstrap liabraries*@
+</head>
+
+<body>
+    <div class="container-fluid pt-3 bg-dark text-center text-white">
+        <div class="row ">
+            <div class="col-sm-1">
+                <img id="logo" src="~/Images/logo.png" />
+            </div>
+            <div class="col-sm-2">
+                <b style="font-family: Tahoma; font-size: 32px; color: #ffffff;">Medkart.com</b>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3">
+                <input id="searchtxt" type="text" class="form-control" placeholder="Search Here" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-sm-1">
+                <input type="button" value="Search" class="btn btn-primary" />
+                </div>
+            <div class="col-sm-1">
+                
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Login" class="nav-link" style="color: #ffffff;">Login</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/UserRegistration" class="nav-link" style="color: #ffffff;">SignUp</a>
+            </div>
+            <div class="col-sm-1">
+                <a style="color: #ffffff;" href="google.com" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+                    </svg>&nbsp;Cart
+                </a>
+            </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Welcome :</label>
+                </div>
+                 <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Guest</label>
+                 </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Indexpage" class="nav-link link-primary" style="color: #ffffff;">Home</a>
+                </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/AboutUs" class="nav-link" style="color: #ffffff;">AboutUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/ContactUs" class="nav-link" style="color: #ffffff;">ContactUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Feedback" class="nav-link" style="color: #ffffff;">Feedback</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/FAQ" class="nav-link" style="color: #ffffff;">FAQ'S</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Afterlayout/Medicine" class="nav-link" style="color: #ffffff;">Medicines</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Beauty</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Lab Tests</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="~/Beforelayout/HealthCareblog" class="nav-link" style="color: #ffffff;">Health Care Blogs</a>
+            </div>
+            </div>
+        </div>
+  
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <div style="background-color: #dddddd; display: block;">
+        <table>
+            <tr>
+                <td style="font-size: 22px; font: bold; font-family: sans-serif; padding-left: 68px;">
+                    <img id="logo2" src="~/Images/logo.png" />&nbsp;Medkart.com
+                </td>
+                <td style="text-align: center; font-family: sans-serif; padding-left: 54px;">Medkart.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to happy customers – PAN India.</td>
+
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: #dddddd; display: block; padding-top: 10px;">
+        <div style="display: inline-block; margin-left: 388px">
+            <table>
+                <tr style="font-size: 19px;">
+                    <td><b><u>Importatnt Links</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Home</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">SignUp</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Care Blogs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">FAQ'S</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 114px; padding-bottom: 41px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Our Services</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Buy Medicines</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Lab Tests</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Beauty Care Products</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Blogs</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 142px; padding-bottom: 83px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Connect With Us</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">ContactUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">AboutUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Feedback</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/beforelayout.css" rel="stylesheet" />
+
+    @*attaching all the bootstrap liabraries*@
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    @*attaching all the bootstrap liabraries*@
+</head>
+
+<body>
+    <div class="container-fluid pt-3 bg-dark text-center text-white">
+        <div class="row ">
+            <div class="col-sm-1">
+                <img id="logo" src="~/Images/logo.png" />
+            </div>
+            <div class="col-sm-2">
+                <b style="font-family: Tahoma; font-size: 32px; color: #ffffff;">Medkart.com</b>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3">
+                <input id="searchtxt" type="text" class="form-control" placeholder="Search Here" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-sm-1">
+                <input type="button" value="Search" class="btn btn-primary" />
+                </div>
+            <div class="col-sm-1">
+                
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Login" class="nav-link" style="color: #ffffff;">Login</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/UserRegistration" class="nav-link" style="color: #ffffff;">SignUp</a>
+            </div>
+            <div class="col-sm-1">
+                <a style="color: #ffffff;" href="google.com" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+                    </svg>&nbsp;Cart
+                </a>
+            </div>
+        </div>
+
+        <div class="row py-3">
+            <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Welcome :</label>
+                </div>
+                 <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Guest</label>
+                 </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Indexpage" class="nav-link link-primary" style="color: #ffffff;">Home</a>
+                </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/AboutUs" class="nav-link" style="color: #ffffff;">AboutUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/ContactUs" class="nav-link" style="color: #ffffff;">ContactUs</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Feedback" class="nav-link" style="color: #ffffff;">Feedback</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/FAQ" class="nav-link" style="color: #ffffff;">FAQ'S</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Afterlayout/Medicine" class="nav-link" style="color: #ffffff;">Medicines</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Beauty</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Lab Tests</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="~/Beforelayout/HealthCareblog" class="nav-link" style="color: #ffffff;">Health Care Blogs</a>
+            </div>
+            </div>
+        </div>
+  
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <div style="background-color: #dddddd; display: block;">
+        <table>
+            <tr>
+                <td style="font-size: 22px; font: bold; font-family: sans-serif; padding-left: 68px;">
+                    <img id="logo2" src="~/Images/logo.png" />&nbsp;Medkart.com
+                </td>
+                <td style="text-align: center; font-family: sans-serif; padding-left: 54px;">Medkart.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to happy customers – PAN India.</td>
+
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: #dddddd; display: block; padding-top: 10px;">
+        <div style="display: inline-block; margin-left: 388px">
+            <table>
+                <tr style="font-size: 19px;">
+                    <td><b><u>Importatnt Links</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Home</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">SignUp</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Care Blogs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">FAQ'S</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 114px; padding-bottom: 41px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Our Services</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Buy Medicines</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Lab Tests</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Beauty Care Products</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Blogs</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 142px; padding-bottom: 83px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Connect With Us</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">ContactUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">AboutUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Feedback</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/beforelayout.css" rel="stylesheet" />
+
+    @*attaching all the bootstrap liabraries*@
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    @*attaching all the bootstrap liabraries*@
+</head>
+
+<body>
+    <div class="container-fluid pt-3 bg-dark text-center text-white">
+        <div class="row ">
+            <div class="col-sm-1">
+                <img id="logo" src="~/Images/logo.png" />
+            </div>
+            <div class="col-sm-2">
+                <b style="font-family: Tahoma; font-size: 32px; color: #ffffff;">Medkart.com</b>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3">
+                <input id="searchtxt" type="text" class="form-control" placeholder="Search Here" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-sm-1">
+                <input type="button" value="Search" class="btn btn-primary" />
+                </div>
+            <div class="col-sm-1">
+                
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/Login" class="nav-link" style="color: #ffffff;">Login</a>
+            </div>
+            <div class="col-sm-1">
+                <a href="~/Beforelayout/UserRegistration" class="nav-link" style="color: #ffffff;">SignUp</a>
+            </div>
+            <div class="col-sm-1">
+                <a style="color: #ffffff;" href="google.com" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+                    </svg>&nbsp;Cart
+                </a>
+            </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Welcome :</label>
+                </div>
+                <div class="col-sm-1">
+                <label style="font-family: Tahoma; font-size: 21px; color: #ffffff;">Guest</label>
+                 </div>
+                <div class="col-sm-1">
+                <a href="~/Beforelayout/Indexpage" class="nav-link link-primary" style="color: #ffffff;">Home</a>
+                </div>
+                <div class="col-sm-1">
+                <a href="~/Beforelayout/AboutUs" class="nav-link" style="color: #ffffff;">AboutUs</a>
+            </div>
+                <div class="col-sm-1">
+                <a href="~/Beforelayout/ContactUs" class="nav-link" style="color: #ffffff;">ContactUs</a>
+            </div>
+                <div class="col-sm-1">
+                <a href="~/Beforelayout/Feedback" class="nav-link" style="color: #ffffff;">Feedback</a>
+            </div>
+                <div class="col-sm-1">
+                <a href="~/Beforelayout/FAQ" class="nav-link" style="color: #ffffff;">FAQ'S</a>
+            </div>
+                <div class="col-sm-1">
+                <a href="~/Afterlayout/Medicine" class="nav-link" style="color: #ffffff;">Medicines</a>
+            </div>
+                <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Beauty</a>
+            </div>
+                <div class="col-sm-1">
+                <a href="google.com" class="nav-link" style="color: #ffffff;">Lab Tests</a>
+            </div>
+                <div class="col-sm-2">
+                <a href="~/Beforelayout/HealthCareblog" class="nav-link" style="color: #ffffff;">Health Care Blogs</a>
+            </div>
+            </div>
+        </div>
+  
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <div style="background-color: #dddddd; display: block;">
+        <table>
+            <tr>
+                <td style="font-size: 22px; font: bold; font-family: sans-serif; padding-left: 68px;">
+                    <img id="logo2" src="~/Images/logo.png" />&nbsp;Medkart.com
+                </td>
+                <td style="text-align: center; font-family: sans-serif; padding-left: 54px;">Medkart.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to happy customers – PAN India.</td>
+
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: #dddddd; display: block; padding-top: 10px;">
+        <div style="display: inline-block; margin-left: 388px">
+            <table>
+                <tr style="font-size: 19px;">
+                    <td><b><u>Importatnt Links</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Home</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">SignUp</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Care Blogs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">FAQ'S</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 114px; padding-bottom: 41px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Our Services</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Buy Medicines</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Lab Tests</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Beauty Care Products</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Read Health Blogs</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: inline-block; margin-left: 142px; padding-bottom: 83px;">
+            <table>
+                <tr>
+                    <td style="font-size: 19px;"><b><u>Connect With Us</u></b></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">ContactUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">AboutUs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="google.com" class="nav-link" style="color: #690bff;">Feedback</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
