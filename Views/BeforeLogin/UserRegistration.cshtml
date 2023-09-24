@@ -1,0 +1,95 @@
+﻿@{
+    Layout = "~/Views/Shared/_BeforeLoginLayout.cshtml";
+}
+
+<div class="container my-5">
+    <div class="row">
+
+        <div class="col-sm-6" id="BgColor">
+            <table class="table text-center table-borderless" id="LeftTable">
+                <thead>
+                    <tr>
+                        <th id="FormLeftHeading">MEDKART.COM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Medkart.com.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to                                 over many happy customers – PAN India. At Medkart.com.com, we help you look after your own health effortlessly                                as well as take care of loved ones wherever they may reside in India. You can buy and send medicines from any                                   corner of the country - with just a few clicks of the mouse.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-light">Connect With Us.</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-6 bg-light">
+            <form method="post">
+                <table class="table table-borderless text-center">
+                    <thead>
+                        <tr>
+                            <th colspan="2" id="FormRightHeading">REGISTER WITH US.</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><input type="text" class="form-control" placeholder="Enter First Name"/></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" class="form-control" placeholder="Enter Last Name" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center"><input type="email" class="form-control" placeholder="Enter Your Email"/></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2"><input type="text" class="form-control" placeholder="Enter Contact Number"/></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" class="form-control" placeholder="Enter Address"/></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="password" class="form-control" placeholder="Create Password" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="FormLableText">Gender</td>
+                            <td>
+                                <input type="radio" name="Gender" value="Male" class="form-check-input" />
+                                &nbsp;<lable class="form-check-label">Male</lable>
+                                &nbsp;<input type="radio" name="Gender" value="Female" class="form-check-input" />&nbsp;
+                                <label class="form-check-label">Female</label>
+                                &nbsp;<input type="radio" name="Gender" value="Other" class="form-check-input" />&nbsp;
+                                <label class="form-check-label">Other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="FormLableText">Enter Date Of Birth</td>
+                            <td><input type="date" class="form-control" /></td>
+                        </tr>
+                        <tr>
+                            <td class="FormLableText">Upload Profile Picture</td>
+                            <td><input type="file" class="form-control-file" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center"><input type="submit" value="Sign Up" class="btn" id="FormSubmittButton" /></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+    </div>
+</div>

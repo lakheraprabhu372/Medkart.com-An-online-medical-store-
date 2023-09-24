@@ -1,0 +1,29 @@
+﻿.FormLableText {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#FormRightHeading {
+    font-size: 24px;
+    color: #034395;
+    text-align:center;
+}
+
+#FormLeftHeading {
+    font-size: 24px;
+}
+
+#BgColor {
+    background-color: #034395;
+}
+
+#LeftTable {
+    color: #ffe8e8;
+    margin-top: 118px;
+}
+
+#FormSubmittButton {
+    color: #ffe8e8;
+    background-color: #034395;
+    width:177px;
+}
